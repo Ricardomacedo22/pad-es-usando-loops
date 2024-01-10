@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <p id="text"></p>
+
+    /*Vá á consola ver a mensagem e a árvore*/
+
+
+    <script>
+        console.log("---   ---   |      .   ---       | \u2216  |   / \u2216   -----    / \u2216   |");
+        console.log("|--   |--   |      |    /        |  \u2216 |  /---\u2216    |     /---\u2216  |  ");
+        console.log("|     ---   |___   |   ---       |   \u2216| /     \u2216   |    /     \u2216 |____  ");
+        
+      let n = 10; /*altura*/
+        let text = "";
+
+    
+        for (let i = 1; i <= n; i++) {
+             if(i < 2){
+                console.log('         \u2605')
+                console.log('        \u2605\u2605')
+             }
+            for (let j = 1; j <= n - i; j++) {
+                text += " ";
+            }
+            for (let k = 0; k < 2 * i - 1; k++) {
+                text += "*";
+            }
+                text += "\n";
+        }
+
+
+        let n1 = 5;
+
+for(let i = 0; i < 5; i++) { 
+    for (let j = 1; j <= n1 + 2; j++) {
+                text += " ";
+                
+            }
+  for(let j = 0; j < n1; j++) {
+    text += "|";
+  }
+  text += "\n";
+}
+console.log(text);
+    </script>
+    
+</body>
+</html>
